@@ -2,6 +2,13 @@ import sys
 
 
 def preprocess_graph(adj_matrix, red_nodes, is_directed):
+    """
+    Preprocess the graph to assign negative weights to the edges based on the red nodes.
+    :param adj_matrix:
+    :param red_nodes:
+    :param is_directed:
+    :return:
+    """
     num_nodes = len(adj_matrix)
     modified_adj_matrix = [[float('inf')] * num_nodes for _ in range(num_nodes)]
 
@@ -21,6 +28,14 @@ def preprocess_graph(adj_matrix, red_nodes, is_directed):
     return modified_adj_matrix
 
 def build_adj_matrix(n, m, source_name, target_name):
+    """
+    Build the adjacency matrix from the input.
+    :param n:
+    :param m:
+    :param source_name:
+    :param target_name:
+    :return:
+    """
     adj_matrix = [[0] * n for _ in range(n)]
     red_nodes, name_vertex_map = [0] * n, {}
     for i in range(n):

@@ -26,7 +26,6 @@ if __name__ == "__main__":
 
     n, m, n_of_r = map(int, sys.stdin.readline().strip().split())
     source_name, target_name = sys.stdin.readline().split()
-    # Adding 2 to n for super source and super sink
     adj_matrix, red_nodes, is_directed, source, target = build_adj_matrix(n, m, source_name, target_name)
 
     if is_directed:
