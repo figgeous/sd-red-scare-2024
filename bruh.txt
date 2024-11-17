@@ -1,0 +1,11 @@
+data_dir = "./data"
+combined_output_path = "./NoneSolution/answers.txt"
+os.makedirs(os.path.dirname(combined_output_path), exist_ok=True)  # Ensure output directory exists
+
+with open(combined_output_path, 'w') as combined_output:
+    for filename in os.listdir(data_dir):
+        if filename.endswith(".txt"):
+            file_path = os.path.join(data_dir, filename)
+            combined_output.write(f"{filename}: ")
+            process_file(file_path, combined_output)
+            #combined_output.write("\n")  # Separate each file's output with a newline
