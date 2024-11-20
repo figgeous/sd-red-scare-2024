@@ -15,6 +15,8 @@ Pseudo code:
         return bellman_ford to find the heaviest path from source to all nodes.
     else:
         not supported
+    Run bellman_ford to find the heaviest path from source to target.
+    Return the result.
 """
 import sys
 
@@ -22,8 +24,7 @@ if __name__ == "__main__":
     n, m, n_of_r = map(int, sys.stdin.readline().strip().split())
     source_name, target_name = sys.stdin.readline().split()
 
-    print(n, m, n_of_r, source_name, target_name)
-    adj_matrix, red_nodes, is_directed, source, target = build_adj_matrix(source_name, target_name)
+    adj_matrix, red_nodes, is_directed, source, target = build_adj_matrix(n, m, source_name, target_name)
 
     mod_adj_matrix = preprocess_graph(adj_matrix, red_nodes, is_directed)
 

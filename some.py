@@ -26,6 +26,7 @@ if __name__ == "__main__":
 
     n, m, n_of_r = map(int, sys.stdin.readline().strip().split())
     source_name, target_name = sys.stdin.readline().split()
+    adj_matrix = [[0] * (n + 2) for _ in range(n + 2)]
     adj_matrix, red_nodes, is_directed, source, target = build_adj_matrix(n, m, source_name, target_name)
 
     if is_directed:
@@ -36,10 +37,11 @@ if __name__ == "__main__":
         print("True" if result > 0 else "False")
         exit(0)
 
-    # Make space for super source and super sink
+    # Make space for super source and super sink. Add two cells.
     for i in range(n):
-        adj_matrix[i].append(0)
-    adj_matrix.append([0] * (n + 1))
+        adj_matrix[i] += [0, 0]
+    adj_matrix.append([0] * (n + 2))
+    adj_matrix.append([0] * (n + 2))
 
     super_source, super_sink = n, n + 1
     adj_matrix[source][super_sink] = 1

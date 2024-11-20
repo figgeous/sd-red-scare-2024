@@ -2,7 +2,7 @@ from pathlib import Path
 
 DATA_DIR = Path("data")
 RESULTS_DIR = Path("results")
-NONE_DIR = Path("none_solution")
+NONE_DIR = Path(".")
 ALTERNATE_DIR = None
 FEW_DIR = None
 SOME_DIR = Path(".")

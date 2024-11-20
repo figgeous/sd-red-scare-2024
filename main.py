@@ -6,7 +6,7 @@ from helpers.constants import DATA_DIR, RESULTS_DIR, MANY_DIR, script_paths
 
 
 if __name__ == "__main__":
-    TIMEOUT = 1  # seconds
+    TIMEOUT = 3600  # seconds
 
     # List of input files. Get all files in directory
     input_files = sorted([os.path.join(DATA_DIR, f) for f in os.listdir(DATA_DIR)
@@ -19,10 +19,10 @@ if __name__ == "__main__":
     #     os.remove(RESULTS_DIR / "many.txt")
 
     runs = []
-    # runs.append("none")
+    runs.append("none")
     # runs.append("few")
     # runs.append("alternate")
-    runs.append("some")
+    # runs.append("some")
     # runs.append("many")
 
     for run in runs:
