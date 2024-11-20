@@ -20,9 +20,9 @@ if __name__ == "__main__":
 
     runs = []
     # runs.append("none")
-    # runs.append("few")
+    runs.append("few")
     # runs.append("alternate")
-    runs.append("some")
+    # runs.append("some")
     # runs.append("many")
 
     for run in runs:

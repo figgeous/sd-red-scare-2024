@@ -1,6 +1,9 @@
 import os
 from collections import deque, defaultdict
 
+from helpers.constants import DATA_DIR
+
+
 def parse_input(file_path):
     """Helper function for parsing an input file.
        First iterates through the nodes and adds them to a dictionary. Also adds red nodes to a set.
@@ -106,8 +109,7 @@ def process_files(folder_path):
 
 if __name__ == "__main__":
     # to replicate the results, replace the folder path with the path to the data folder on your computer
-    folder_path = "/Users/maria/Documents/ITU/Computer Science/Algorithm Design/algdes-labs/red-scare/data"
-    results = process_files(folder_path)
+    results = process_files(DATA_DIR)
     results = dict(sorted(results.items()))
 
     for file_name, result in results.items():
