@@ -26,10 +26,13 @@ if __name__ == "__main__":
 
     adj_matrix, red_nodes, is_directed, source, target = build_adj_matrix(n, m, source_name, target_name)
 
-    mod_adj_matrix = preprocess_graph(adj_matrix, red_nodes, is_directed)
+    if is_directed:
+        mod_adj_matrix = preprocess_graph(adj_matrix, red_nodes, is_directed)
 
-    result = bellman_ford(mod_adj_matrix, source, target)
-    print(result)
+        result = bellman_ford(mod_adj_matrix, source, target)
+        print(result)
+    else:
+        print("Undirected")
 
     exit(0)
 

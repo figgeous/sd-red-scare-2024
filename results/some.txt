@@ -142,7 +142,7 @@ wall-p-1.txt True
 wall-p-10.txt True
 wall-p-100.txt True
 wall-p-1000.txt True
-wall-p-10000.txt Unknown error
+wall-p-10000.txt UnknownError
 wall-p-2.txt True
 wall-p-3.txt True
 wall-p-4.txt True
@@ -150,7 +150,7 @@ wall-z-1.txt True
 wall-z-10.txt True
 wall-z-100.txt True
 wall-z-1000.txt True
-wall-z-10000.txt Unknown error
+wall-z-10000.txt UnknownError
 wall-z-2.txt True
 wall-z-3.txt True
 wall-z-4.txt True
