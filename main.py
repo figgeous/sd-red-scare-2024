@@ -19,10 +19,10 @@ if __name__ == "__main__":
     #     os.remove(RESULTS_DIR / "many.txt")
 
     runs = []
-    runs.append("none")
+    # runs.append("none")
     # runs.append("few")
     # runs.append("alternate")
-    # runs.append("some")
+    runs.append("some")
     # runs.append("many")
 
     for run in runs:

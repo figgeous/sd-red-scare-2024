@@ -50,30 +50,3 @@ class EdmondsKarp:
 
             max_flow += path_flow
         return max_flow, self.residual_graph
-
-
-if __name__ == '__main__':
-    n, m = list(map(int, sys.stdin.readline().split()))
-
-    n_plus = n + n + 2
-    x_offset = 2
-    y_offset = x_offset + n
-
-    adj_matrix = [[0] * n_plus for _ in range(n_plus)]
-    adj_matrix[0] = [0, 0] + [1] * n + [0] * n  # source
-    for i in range(y_offset, len(adj_matrix)):
-        adj_matrix[i][1] = 1
-
-    for _ in range(m):
-        p1, p2 = list(map(int, sys.stdin.readline().split()))
-        adj_matrix[x_offset + p1 - 1][y_offset + p2 - 1] = 1
-        adj_matrix[x_offset + p2 - 1][y_offset + p1 - 1] = 1
-
-    edmonds_karp = EdmondsKarp(adj_matrix)
-    max_flow, res_graph = edmonds_karp.run(0, 1)
-
-    if max_flow == n:
-        for i, node in enumerate(res_graph[y_offset:]):
-            print(node[x_offset:y_offset].index(1) + 1)
-    else:
-        print("Impossible")

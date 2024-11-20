@@ -86,7 +86,6 @@ rusty-2-4000.txt True
 rusty-2-4500.txt True
 rusty-2-5000.txt True
 rusty-2-5757.txt True
-ski-illustration.txt many_algorithm
 smallworld-10-0.txt True
 smallworld-10-1.txt True
 smallworld-20-0.txt True
@@ -152,3 +151,6 @@ ski-level20-3.txt False
 wall-p-1000.txt True
 wall-z-1000.txt True
 wall-n-10000.txt MemoryError
+ski-illustration.txt True
+wall-p-10000.txt Unknown error
+wall-z-10000.txt Unknown error
