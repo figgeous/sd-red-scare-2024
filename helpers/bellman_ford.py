@@ -30,4 +30,4 @@ def bellman_ford(adj_matrix, source, target):
                     adj_matrix[u][v] < distances[v]:
                 return "NegativeWeightCycle"
 
-    return -distances[target] if distances[target] != float('inf') else -1
+    return distances[target] if distances[target] != float('inf') else -1

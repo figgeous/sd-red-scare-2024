@@ -34,7 +34,7 @@ if __name__ == "__main__":
         mod_adj_matrix = preprocess_graph(adj_matrix, red_nodes, is_directed)
 
         result = bellman_ford(mod_adj_matrix, source, target)
-        print("True" if result > 0 else "False")
+        print("True" if result < 0 else "False")
         exit(0)
 
     # Make space for super source and super sink. Add two cells.

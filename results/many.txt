@@ -133,7 +133,7 @@ wall-n-1.txt Undirected
 wall-n-10.txt Undirected
 wall-n-100.txt Undirected
 wall-n-1000.txt Undirected
-wall-n-10000.txt Unknown error
+wall-n-10000.txt Undirected
 wall-n-2.txt Undirected
 wall-n-3.txt Undirected
 wall-n-4.txt Undirected
@@ -141,7 +141,7 @@ wall-p-1.txt Undirected
 wall-p-10.txt Undirected
 wall-p-100.txt Undirected
 wall-p-1000.txt Undirected
-wall-p-10000.txt Unknown error
+wall-p-10000.txt Undirected
 wall-p-2.txt Undirected
 wall-p-3.txt Undirected
 wall-p-4.txt Undirected
@@ -149,7 +149,7 @@ wall-z-1.txt Undirected
 wall-z-10.txt Undirected
 wall-z-100.txt Undirected
 wall-z-1000.txt Undirected
-wall-z-10000.txt Unknown error
+wall-z-10000.txt Undirected
 wall-z-2.txt Undirected
 wall-z-3.txt Undirected
 wall-z-4.txt Undirected
