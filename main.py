@@ -60,7 +60,7 @@ if __name__ == "__main__":
                     result = process.stdout.strip()
                 else:
                     result = process.stderr.splitlines()[
-                        -1] if process.stderr else "Unknown error"
+                        -1] if process.stderr else "UnknownError"
             except subprocess.TimeoutExpired:
                 result = f"Timeout_{TIMEOUT}_s"
 
